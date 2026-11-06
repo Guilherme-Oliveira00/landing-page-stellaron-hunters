@@ -120,9 +120,43 @@ body {
     filter: grayscale(0%) brightness(1.1); /* Devolve a cor ao passar o mouse */
 }
 
+/* ===============================
+   ESTILO DO BOTÃO ATIVO (Movimento geral)
+   =============================== */
 .botoes .botao.selecionado {
-    border-color: #00f0ff; /* Brilho neon/ciano */
     transform: scale(1.15) translateX(-10px);
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6), inset 0 0 10px rgba(0, 240, 255, 0.3);
     filter: grayscale(0%) brightness(1.1);
+}
+
+/* ===============================
+   CORES DO NEON POR PERSONAGEM
+   =============================== */
+/* Grupo: Ciano Padrão */
+#grupo.selecionado {
+    border-color: #00f0ff; 
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6), inset 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+/* Kafka: Vinho / Magenta */
+#kafka.selecionado {
+    border-color: #e11d48; 
+    box-shadow: 0 0 20px rgba(225, 29, 72, 0.6), inset 0 0 10px rgba(225, 29, 72, 0.3);
+}
+
+/* Silver Wolf: Roxo / Azulado */
+#silver-wolf.selecionado {
+    border-color: #a855f7; 
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6), inset 0 0 10px rgba(168, 85, 247, 0.3);
+}
+
+/* Blade: Vermelho Sangue */
+#blade.selecionado {
+    border-color: #dc2626; 
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.6), inset 0 0 10px rgba(220, 38, 38, 0.3);
+}
+
+/* Firefly: Verde / Ciano Claro */
+#firefly.selecionado {
+    border-color: #10b981; 
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.6), inset 0 0 10px rgba(16, 185, 129, 0.3);
 }
