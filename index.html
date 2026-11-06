@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellaron Hunters | Landing Page</title>
+    
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet">
+    
+    <!-- Nossos arquivos CSS puros -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+    <!-- Sombra lateral para os textos não sumirem -->
+    <div class="gradiente-fundo"></div>
+
+    <!-- ÁREA DOS PERSONAGENS (Imagens e Textos) -->
+    <main class="personagens">
+        
+        <!-- 1. GRUPO -->
+        <div class="personagem selecionado">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./src/img/bg-grupo-mobile.png">
+                <img src="./src/img/bg-grupo.png" alt="Caçadores de Stellaron">
+            </picture>
+            <div class="conteudo">
+                <h1>Caçadores de Stellaron</h1>
+                <p>Uma facção misteriosa que viaja pelo universo em busca de Stellarons. Selecione os ícones à direita para descobrir mais sobre cada um dos membros de elite deste grupo formidável.</p>
+            </div>
+        </div>
+
+        <!-- 2. KAFKA -->
+        <div class="personagem">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./src/img/bg-kafka-mobile.png">
+                <img src="./src/img/bg-kafka.png" alt="Kafka">
+            </picture>
+            <div class="conteudo">
+                <h1>Kafka</h1>
+                <p>Calma, elegante e perigosamente bela. Com seu casaco clássico e guarda-chuva, ela possui a habilidade única de manipular mentes usando seu Sussurro Espiritual.</p>
+            </div>
+        </div>
+
+        <!-- 3. SILVER WOLF -->
+        <div class="personagem">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./src/img/bg-silver-wolf-mobile.png">
+                <img src="./src/img/bg-silver-wolf.png" alt="Silver Wolf">
+            </picture>
+            <div class="conteudo">
+                <h1>Silver Wolf</h1>
+                <p>Uma hacker genial do universo que enxerga a realidade como um grande videogame. Com a técnica de "Edição de Éter", ela pode alterar os parâmetros do próprio mundo ao seu redor.</p>
+            </div>
+        </div>
+
+        <!-- 4. BLADE -->
+        <div class="personagem">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./src/img/bg-blade-mobile.png">
+                <img src="./src/img/bg-blade.png" alt="Blade">
+            </picture>
+            <div class="conteudo">
+                <h1>Blade</h1>
+                <p>Um espadachim que abandonou seu corpo mortal em troca de uma lâmina. Ele possui uma capacidade de cura aterrorizante e luta no campo de batalha com uma devoção quase implacável.</p>
+            </div>
+        </div>
+
+        <!-- 5. FIREFLY -->
+        <div class="personagem">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./src/img/bg-firefly-mobile.png">
+                <img src="./src/img/bg-firefly.png" alt="Firefly">
+            </picture>
+            <div class="conteudo">
+                <h1>Firefly</h1>
+                <p>Uma garota gentil que veste a imponente armadura mecânica "SAM" para lutar. Nascida como uma arma, ela agora viaja em busca do verdadeiro sentido de sua existência.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- PAINEL DE BOTÕES (Note que coloquei um 'id' em cada um para facilitar no JavaScript depois) -->
+    <ul class="botoes">
+        <li>
+            <button class="botao selecionado" id="grupo">
+                <img src="./src/img/icone-bg-grupo.png" alt="Ícone Grupo">
+            </button>
+        </li>
+        <li>
+            <button class="botao" id="kafka">
+                <img src="./src/img/icone-kafka.png" alt="Ícone Kafka">
+            </button>
+        </li>
+        <li>
+            <button class="botao" id="silver-wolf">
+                <img src="./src/img/icone-silver-wolf.png" alt="Ícone Silver Wolf">
+            </button>
+        </li>
+        <li>
+            <button class="botao" id="blade">
+                <img src="./src/img/icone-blade.png" alt="Ícone Blade">
+            </button>
+        </li>
+        <li>
+            <button class="botao" id="firefly">
+                <img src="./src/img/icone-firely.png" alt="Ícone Firefly">
+            </button>
+        </li>
+    </ul>
+
+    <!-- O JS só vai entrar aqui quando formos programar a lógica -->
+    <!-- <script src="./js/index.js"></script> -->
+</body>
+</html>
