@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Remove as barras de rolagem */
+}
+
+/* ===============================
+   SOMBRA LATERAL DE CONTRASTE
+   =============================== */
+.gradiente-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradiente que vai do preto na esquerda até transparente na direita */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 40%, transparent 100%);
+    z-index: 10;
+    pointer-events: none; /* Para não bugar os cliques do mouse */
+}
+
+/* ===============================
+   PERSONAGENS (Telas)
+   =============================== */
+.personagem {
+    display: none; /* Todo mundo invisível por padrão */
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.personagem.selecionado {
+    display: block; /* Só quem tiver a classe selecionado aparece */
+}
+
+/* Fundo da tela inteira */
+.personagem picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.personagem picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Estica a imagem mantendo a proporção */
+}
+
+/* Textos da tela */
+.conteudo {
+    position: relative;
+    z-index: 20;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 650px;
+    padding-left: 120px;
+}
+
+.conteudo h1 {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar a letra */
+}
+
+.conteudo p {
+    color: #d1d5db;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ===============================
+   PAINEL DE BOTÕES
+   =============================== */
+.botoes {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 30;
+    list-style: none;
+}
+
+.botoes .botao {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background-color: rgba(15, 23, 42, 0.6);
+    padding: 2px;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+    filter: grayscale(40%) brightness(0.8); /* Deixa as fotos meio apagadas/cinzas */
+}
+
+.botoes .botao img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.botoes .botao:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%) brightness(1.1); /* Devolve a cor ao passar o mouse */
+}
+
+.botoes .botao.selecionado {
+    border-color: #00f0ff; /* Brilho neon/ciano */
+    transform: scale(1.15) translateX(-10px);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6), inset 0 0 10px rgba(0, 240, 255, 0.3);
+    filter: grayscale(0%) brightness(1.1);
+}

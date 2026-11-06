@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    /* Diminui a fonte e as margens no celular */
+    .conteudo {
+        padding-left: 30px;
+        padding-right: 80px; /* Para o texto não bater nos botões */
+        max-width: 100%;
+    }
+
+    .conteudo h1 {
+        font-size: 40px;
+    }
+
+    .conteudo p {
+        font-size: 16px;
+    }
+
+    /* Encolhe os botões laterais */
+    .botoes {
+        right: 16px;
+        gap: 12px;
+    }
+
+    .botoes .botao {
+        width: 60px;
+        height: 60px;
+    }
+}
