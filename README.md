@@ -1,5 +1,8 @@
 # 🌌 Stellaron Hunters | Landing Page
 
+## ⚖️ Aviso de Direitos Autorais
+Este é um projeto de estudo sem fins lucrativos desenvolvido por fãs. Todas as imagens, marcas e personagens de **Honkai: Star Rail** pertencem à **HoYoverse**.
+
 Uma landing page interativa inspirada na misteriosa facção "Caçadores de Stellaron" do jogo Honkai: Star Rail. 
 
 Este projeto foi construído do zero com o objetivo de treinar e consolidar os fundamentos clássicos do Front-end, com foco principal em **Manipulação do DOM** e estilização utilizando **CSS puro (Vanilla)**, sem o uso de frameworks.
